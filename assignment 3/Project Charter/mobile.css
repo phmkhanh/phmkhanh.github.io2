@@ -1,0 +1,55 @@
+@media only screen and (max-width: 576px) {
+  /* Mobile */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .element {
+    padding-top: 10px;
+    display: block;
+  }
+  /* timeline */
+  .timeline {
+    background-color: #f0f8ff;
+    padding-bottom: 50px;
+    border-left: 12px solid blue;
+  }
+  .number-timeline {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  /* frame-1 */
+  .goals {
+    grid-area: g;
+  }
+  .team {
+    grid-area: t;
+  }
+  .scopes {
+    grid-area: s;
+  }
+  .primary {
+    grid-area: p;
+  }
+  .container .frame-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-right: 0px;
+    grid-template-areas:
+      "g"
+      "s"
+      "t"
+      "p";
+  }
+  .container .frame-1 > div {
+    padding-bottom: 50px;
+  }
+  /* Scopes */
+  .in-out {
+    display: block;
+  }
+}
